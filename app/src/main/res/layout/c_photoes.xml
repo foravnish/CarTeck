@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stroke">
+
+    <carteckh.carteckh.util.CustomTextView
+        style="@style/TextViewStyle_Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a2a2a"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Photos"
+        android:textStyle="bold" />
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/c_photoes_heading1"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke"
+        android:duplicateParentState="true"
+        android:visibility="gone" />
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/c_photoes_heading2"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:visibility="gone" />
+
+
+    <Gallery
+        android:id="@+id/gallery2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+

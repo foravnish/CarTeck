@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="First Name"
+                android:textColor="#b3b0a1" />
+
+            <EditText
+                android:id="@+id/et_firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="7pt"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/mycoursor"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3b0a1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Last Name"
+                android:textColor="#b3b0a1" />
+
+            <EditText
+                android:id="@+id/et_lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="7pt"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/mycoursor"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3b0a1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Email"
+                android:textColor="#b3b0a1" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:enabled="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="7pt"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/mycoursor"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3b0a1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Mobile"
+                android:textColor="#b3b0a1" />
+
+            <EditText
+                android:id="@+id/et_mobilenumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:maxLength="10"
+                android:textSize="7pt"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/mycoursor"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3b0a1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Location"
+                android:layout_marginTop="10dp"
+                android:textColor="#b3b0a1" />
+
+            <Spinner
+                android:id="@+id/spin_state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background"></Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Pin Code"
+                android:textColor="#b3b0a1" />
+
+            <EditText
+                android:id="@+id/et_pinnumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="7pt"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/mycoursor"
+                android:inputType="number"
+                android:textColor="#ffffff"
+                android:maxLength="6"
+                android:textColorHint="#b3b0a1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Address "
+                android:textColor="#b3b0a1" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="7pt"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/mycoursor"
+                android:inputType="textMultiLine"
+                android:textColor="#ffffff"
+                android:textColorHint="#b3b0a1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background"
+            android:text="Update Detail"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+</LinearLayout>

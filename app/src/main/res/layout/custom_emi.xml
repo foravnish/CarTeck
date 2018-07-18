@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_principalamount"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Principal Amount:"
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_principalamount1"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/interestrate"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interest Rate:"
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/interestrate1"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/totalmonth"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Month:"
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/totalmonth1"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/emiamount"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EMI Amount:"
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/emiamount1"
+
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/intrestamount"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interest Amount:"
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/intrestamount1"
+            style="@style/TextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/myColorRed"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

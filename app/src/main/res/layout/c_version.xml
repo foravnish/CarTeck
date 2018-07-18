@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stroke">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/c_version_campare_car">
+
+        <LinearLayout
+            android:id="@+id/c_version_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <carteckh.carteckh.util.CustomTextView
+                style="@style/TextViewStyle_Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2a2a2a"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Versions"
+                android:textStyle="bold" />
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="hello1"-->
+                <!--android:textColor="#fff"/>-->
+
+        <LinearLayout
+
+            android:id="@+id/c_version_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Discontinued Cars"-->
+                <!--android:textColor="#FFF"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:textStyle="bold"/>-->
+
+            <!--<GridView-->
+                <!--android:id="@+id/list_data"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:columnWidth="50dp"-->
+                <!--android:verticalSpacing="7dp"-->
+                <!--android:visibility="visible"-->
+                <!--android:stretchMode="columnWidth">-->
+
+            <!--</GridView>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--<GridView-->
+        <!--android:id="@+id/list_data"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</GridView>-->
+
+    <carteckh.carteckh.util.CustomButton
+        android:id="@+id/c_version_campare_car"
+        style="@style/TextViewStyle_Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_background"
+        android:visibility="visible"
+        android:text="Compare" />
+</RelativeLayout>

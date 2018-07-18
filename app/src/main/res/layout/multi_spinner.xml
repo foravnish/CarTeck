@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/text"
+        style="?android:attr/spinnerItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+
+        android:textColor="#fff"
+        android:text="fff"
+        android:textSize="12dp" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/ch_terms2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left"
+        android:textColor="#000"
+        android:backgroundTint="#000"/>
+</LinearLayout>

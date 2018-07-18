@@ -1,0 +1,91 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "carteckh.carteckh"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.1"
+
+    }
+    buildTypes {
+
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //recycleview
+    //Volley Lib
+    provided 'org.glassfish:javax.annotation:10+'
+    //compile 'com.mcxiaoke.volley:library:1.0.18'
+    //ButterKnife
+    //Crouton lib
+    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+        // exclusion is not necessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    //Tab layout
+    //progress bar
+    compile project(':library-circular')
+    //Context menu
+    //swipe listview
+    compile project(':library')
+    //youtube
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    //slider
+    //Picasso
+    //compile 'com.squareup.picasso:picasso:2.3.1'
+    compile project(':libmultispinner')
+    //Range Bar
+    compile files('libs/commons-lang3-3.4.jar')
+    //compile 'com.shamanland:facebook-like-button:0.1.8'
+    compile('com.twitter.sdk.android:twitter:2.1.0@aar') {
+        transitive = true;
+    }
+
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.yalantis:contextmenu:1.0.5'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.appyvet:materialrangebar:1.3'
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.5.0'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
+}

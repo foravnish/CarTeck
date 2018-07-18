@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_image1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/steering_none" />
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/staringunder" />
+
+        <Button
+            android:id="@+id/btn_comparecar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btn_usedcar"
+            android:layout_alignLeft="@+id/main_image"
+            android:layout_alignStart="@+id/main_image"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="68dp"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/btn_newcars"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/btn_comparecar"
+            android:layout_alignLeft="@+id/centre"
+            android:layout_alignStart="@+id/centre"
+            android:layout_alignTop="@+id/main_image"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/btn_usedcar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toLeftOf="@+id/btn_dealcar"
+            android:layout_toStartOf="@+id/btn_dealcar"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/btn_sellcars"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/centre"
+            android:layout_alignEnd="@+id/main_image"
+            android:layout_alignRight="@+id/main_image"
+            android:layout_below="@+id/btn_newcars"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="24dp"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/btn_dealcar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/btn_comparecar"
+            android:layout_alignStart="@+id/btn_comparecar"
+            android:layout_below="@+id/btn_usedcar"
+            android:layout_marginTop="26dp"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/btn_emical"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/btn_newcars"
+            android:layout_alignRight="@+id/btn_newcars"
+            android:layout_alignTop="@+id/btn_dealcar"
+            android:layout_toEndOf="@+id/centre"
+            android:layout_toRightOf="@+id/centre"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/centre"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_comparecar"
+            android:layout_centerHorizontal="true"
+            android:background="@null" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

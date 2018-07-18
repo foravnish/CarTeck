@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:id="@+id/tv_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0.20"
+        android:background="#2a2a2a"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#ED1C24" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/stroke"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/spin_brand"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.9"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            android:background="@drawable/btn_background" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_background"
+            android:textColor="#FFF"
+            android:visibility="visible"
+            android:layout_weight="0.10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+            android:text="Go"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/grid_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="0.80"
+            android:divider="@null"
+            android:dividerHeight="2dp">
+
+        </ListView>
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/filter"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="48dp"-->
+            <!--android:src="@drawable/red"></android.support.design.widget.FloatingActionButton>-->
+
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/red"/>
+
+
+        <ImageView
+            android:id="@+id/ImageUsedCar"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:background="@drawable/noitem"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

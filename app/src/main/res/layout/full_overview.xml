@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bg"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroke"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_question"
+            style="@style/TextViewStyle_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/myColorRed"
+            android:textStyle="bold" />
+
+
+
+        <!--<sntinfotech.carteck.util.CustomTextView-->
+            <!--android:id="@+id/tv_ans"-->
+            <!--style="@style/TextViewStyle"-->
+            <!--android:text=""-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/myColorGreyLight"/>-->
+
+        <WebView
+            android:id="@+id/tv_ans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2a2a2a">
+        </WebView>
+
+
+        <!--<com.android.volley.toolbox.NetworkImageView-->
+            <!--android:id="@+id/imageData"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <carteckh.carteckh.util.PredicateLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/tv_postby"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Post By: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/myColorGreyLight" />
+
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/tv_postby1"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="|"
+                android:textColor="@color/myColorGreyLight"></TextView>
+
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/tv_postdate"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Post Date: "
+                android:textColor="@color/myColorGreyLight" />
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/tv_postdate1"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="|"
+                android:textColor="@color/myColorGreyLight"></TextView>
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/tv_totalview"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Total View: "
+                android:textColor="@color/myColorGreyLight" />
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/tv_totalview1"
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="" />
+
+
+        </carteckh.carteckh.util.PredicateLayout>
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/pager"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp" />-->
+
+        <!--<com.viewpagerindicator.CirclePageIndicator-->
+            <!--android:id="@+id/indicat"-->
+            <!--android:layout_alignTop="@+id/slider"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_weight="8">
+
+
+        <com.facebook.share.widget.LikeView
+            android:id="@+id/likeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/twi_id"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/twitter"/>
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

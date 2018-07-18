@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_weight="10"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="6">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/networkimag"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/background_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_brandname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Audi"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/tv_offersfrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offer From: "
+                android:textColor="#ffffff"
+                android:textSize="14sp"/></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/tv_offersfrom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff3833"
+                android:textSize="14sp"/></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/tv_validtill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid Till: "
+                android:textColor="#ffffff"
+                android:textSize="14sp"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/tv_validtill1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff3833"
+                android:textSize="14sp"/></LinearLayout>
+        </LinearLayout>
+
+        <!--<sntinfotech.carteck.util.PredicateLayout-->
+            <!--android:layout_width="fill_parent"-->
+
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Loading"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_price1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Loading"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+        <!--</sntinfotech.carteck.util.PredicateLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/tv_dealter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offer: "
+                android:textColor="#ffffff"
+                android:textSize="14sp"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/tv_dealter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff3833"
+                android:textSize="14sp"/></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/tv_emailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dealer Name: "
+                android:textColor="#ffffff"
+                android:textSize="14sp"/></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/tv_emailid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3833"
+                android:text=""
+                android:textSize="14sp"/> </LinearLayout>
+        </LinearLayout>
+
+        <!--<sntinfotech.carteck.util.PredicateLayout-->
+            <!--android:layout_width="fill_parent"-->
+
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_city"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" "-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_city1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Loading"-->
+                <!--android:textColor="#ff3833"-->
+                <!--android:textSize="14sp" />-->
+        <!--</sntinfotech.carteck.util.PredicateLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="#ffffff"
+                android:textSize="14sp"/> </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/tv_no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff3833"
+                android:textSize="14sp"/> </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No.: "
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff3833"
+                android:textSize="14sp"/> </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

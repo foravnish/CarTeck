@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".actvities.MainActivity2">
+
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="@string/action_call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_state"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="@string/action_call"
+        app:showAsAction="always" />
+
+</menu>

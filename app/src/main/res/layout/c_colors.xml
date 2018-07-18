@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stroke">
+
+    <carteckh.carteckh.util.CustomTextView
+        style="@style/TextViewStyle_Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a2a2a"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Colour"
+        android:textStyle="bold" />
+
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/c_colors_heading1"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/c_colors_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/c_colors_heading2"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp" />
+</LinearLayout>
+
+

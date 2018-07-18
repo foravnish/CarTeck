@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text=""/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/ch_terms"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:textColor="#000"
+
+            android:shadowColor="@color/btn_background"
+
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp" />
+        <TextView
+            android:id="@+id/tvterm"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ch_terms"
+            android:textColor="#000"
+            android:text="I Accepts Terms &amp; Conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Continue"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn_background" />
+</LinearLayout>

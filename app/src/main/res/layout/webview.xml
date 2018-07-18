@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBarweb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/dialog_back"
+        android:layout_gravity="center_vertical|center_horizontal"
+         />
+
+    <TextView
+        android:id="@+id/noti_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Loading, Please Wait.."
+        android:textSize="20sp"></TextView>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+    <!--<include layout="@layout/inner_footer" android:id="@+id/about_foot"/>-->
+</LinearLayout>

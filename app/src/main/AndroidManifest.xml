@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="carteckh.carteckh"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+
+    <application
+        android:name="carteckh.carteckh.AppController"
+        android:allowBackup="true"
+
+        android:icon="@drawable/app_logo1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="carteckh.carteckh.actvities.Testing"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="carteckh.carteckh.actvities.Splash"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="carteckh.carteckh.actvities.SignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="carteckh.carteckh.actvities.Forgot_Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="carteckh.carteckh.util.ShareApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="carteckh.carteckh.actvities.User_Login"
+            android:screenOrientation="portrait" />
+
+        <!-- <service android:name=".ServiceClass"></service> -->
+        <!-- <meta-data -->
+        <!-- android:name="io.fabric.ApiKey" -->
+        <!-- android:value="AIzaSyDktt3acWHYN65Yb7ds5rhxdlgIuqGlfkM" /> -->
+        <!-- Facebook -->
+
+
+        <!-- <activity -->
+        <!-- android:name="com.shamanland.facebook.likebutton.FacebookLikeActivity" -->
+        <!-- android:label="@string/com_shamanland_facebook" -->
+        <!-- android:theme="@style/Theme.Facebook.Like" -->
+        <!-- /> -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5553a63d5949421e756e8aa8bc35e1ccc0d77667" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider617986568372609"
+            android:exported="true" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name="carteckh.carteckh.service.ServiceClass" />
+        <!--<service android:name="sntinfotech.carteckh.service.ServiceClass2" />-->
+        <service android:name="carteckh.carteckh.service.ServiceClass3" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stroke"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".actvities.MainActivity2">
+
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/tv_question"
+        style="@style/TextViewStyle_Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/myColorRed"
+        android:textStyle="bold" />
+
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/tv_ans"
+        style="@style/TextViewStyle"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myColorGreyLight" />
+
+
+    <carteckh.carteckh.util.CustomTextView
+        android:id="@+id/tv_readmore"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/btn_background"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="Read More" />
+
+    <carteckh.carteckh.util.PredicateLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp">
+
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_postby"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Post By: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/myColorGreyLight" />
+
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_postby1"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="|"
+            android:textColor="@color/myColorGreyLight"></TextView>
+
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_postdate"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Post Date: "
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_postdate1"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="|"
+            android:textColor="@color/myColorGreyLight"></TextView>
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_totalview"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+
+            android:text="Total View: "
+            android:textColor="@color/myColorGreyLight" />
+
+        <carteckh.carteckh.util.CustomTextView
+            android:id="@+id/tv_totalview1"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""/>
+
+    </carteckh.carteckh.util.PredicateLayout>
+
+
+</LinearLayout>

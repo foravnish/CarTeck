@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="15dp">
+
+        <Button
+            android:textColor="#000"
+            android:background="@drawable/dialog_box_shape"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:id="@+id/locatedealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locate Dealers" />
+        <Button
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_box_shape"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:id="@+id/locateservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locate service centre " />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stroke"
+    android:weightSum="3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <carteckh.carteckh.util.CustomTextView
+                android:id="@+id/c_overview_tv_heading"
+                style="@style/TextViewStyle_Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2a2a2a"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/c_overview_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/watermark"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/dis"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:background="@drawable/discontinue"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="7pt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="7pt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center">-->
+
+            <TextView
+                android:id="@+id/msg"
+                android:textColor="#FFF"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/dealer"
+                android:textColor="#76B9EC"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/emitext"
+                android:textColor="#FFF"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+            <!--<sntinfotech.carteck.util.CustomTextView-->
+                <!--android:id="@+id/c_overview_tv"-->
+                <!--style="@style/TextViewStyle"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:text="hhh"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_weight="2" />-->
+            <TextView
+                android:id="@+id/c_overview_tv"
+                android:textColor="#FFF"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/roadside"
+                android:textColor="#FFF"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

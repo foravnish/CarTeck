@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/car_sell_icon"/>
+
+        <TextView
+            android:id="@+id/tv_groupitem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/icon_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_expand_more"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/icon_collapse"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_expand_less"
+            android:visibility="gone" />
+
+
+        <!--<ToggleButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:id="@+id/toggle"-->
+            <!--android:checked="true"-->
+            <!--android:layout_alignRight="@+id/tv_groupitem"-->
+            <!--android:visibility="invisible"-->
+            <!--style="@style/AppBaseTheme" />-->
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/toggle"
+            android:checked="true"
+            android:layout_alignRight="@+id/tv_groupitem"
+            android:visibility="invisible"
+            app:theme="@style/BrandedSwitch"/>
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:background="#800000"/>-->
+
+</LinearLayout>

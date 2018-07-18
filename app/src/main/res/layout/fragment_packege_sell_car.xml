@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2a2a2a"
+    tools:context="carteckh.carteckh.fragments.Packege_sell_car">
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:background="#2a2a2a"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:textColor="#ED1C24"
+            android:textSize="8pt"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your"/>
+
+        <TextView
+            android:textColor="#ED1C24"
+            android:textSize="8pt"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Package"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a2a2a"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:background="#2a2a2a"
+        android:layout_weight="1">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:text="Packages"/>
+
+
+    </LinearLayout>
+
+        <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#fff"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:text="No. of Days"/>
+
+        </LinearLayout>
+        <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#fff"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:background="#2a2a2a"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:text="No.of Listing"/>
+
+        </LinearLayout>
+        <!--<View-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="#fff"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:text="Price (₹)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:background="#2a2a2a"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:text="Buy"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_gravity="center"/>
+
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#808080"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:background="@drawable/stroke">
+    </GridView>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relat2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp">
+
+    <Button
+        android:id="@+id/packages"
+        android:background="@drawable/btn_background"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="left"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Available Package"/>
+
+    <Button
+        android:id="@+id/free"
+        android:background="@drawable/btn_background"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free List Your Car"/>
+
+
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stroke"
+    tools:context="carteckh.carteckh.fragments.Car_Dis_Version">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discontinued Cars"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <GridView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="50dp"
+        android:verticalSpacing="7dp"
+        android:visibility="visible"
+        android:stretchMode="columnWidth">
+
+    </GridView>
+
+
+</LinearLayout>

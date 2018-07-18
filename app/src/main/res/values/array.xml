@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>New Car</item>
+        <item>Used Car</item>
+        <item>Sell Your Car</item>
+        <item>Compare Cars</item>
+        <item>Advanced Car Search</item>
+        <item>Utilities</item>
+        <item>Advertise With Us</item>
+        <item>Notification</item>
+        <item>Login / Register</item>
+    </string-array>
+
+    <string-array name="home">
+    </string-array>
+
+    <string-array name="NewCar">
+        <item>Find New Cars</item>
+        <item>New Launches</item>
+        <item>Upcoming Cars</item>
+
+        <item>Dealers / Service Centres</item>
+        <item>EMI Calculator</item>
+        <item>Check Offers</item>
+
+    </string-array>
+
+    <string-array name="Usedcar">
+    </string-array>
+
+    <string-array name="Sellyourcar">
+    </string-array>
+
+    <string-array name="Comparecars">
+    </string-array>
+
+    <string-array name="Advancecar">
+    </string-array>
+
+    <string-array name="Utilities">
+        <item>Roadside Assistance</item>
+        <item>Did You Know?</item>
+        <item>Carteckh’s Choice</item>
+        <item>Photo Gallery</item>
+        <item>About Us</item>
+        <item>Terms &amp; Conditions</item>
+    </string-array>
+
+    <string-array name="Advertisewithus">
+    </string-array>
+    <string-array name="Notification">
+    </string-array>
+    <string-array name="Login">
+    </string-array>
+
+
+
+
+</resources>

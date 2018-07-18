@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_login_bg"
+    tools:context="carteckh.carteckh.actvities.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/top_icon" />
+
+        <EditText
+            android:id="@+id/et_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/user_name_icon"
+            android:drawablePadding="10dp"
+            android:hint="First Name"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/mycoursor"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/et_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/mycoursor"
+            android:drawableLeft="@drawable/user_name_icon"
+            android:drawablePadding="10dp"
+            android:hint="Last Name"
+            android:backgroundTint="@color/btn_background"
+            android:textColor="@android:color/white"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/email_icon"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/mycoursor"
+            android:backgroundTint="@color/btn_background"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/mycoursor"
+            android:drawableLeft="@drawable/password_icon"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:backgroundTint="@color/btn_background"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/et_cnfrmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/btn_background"
+            android:drawableLeft="@drawable/password_icon"
+            android:drawablePadding="15dp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/mycoursor"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/mobile_icon"
+            android:drawablePadding="10dp"
+            android:maxLength="10"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/mycoursor"
+            android:backgroundTint="@color/btn_background"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+
+            android:textColorHint="#fff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_centerVertical="true"
+                android:id="@+id/ch_terms"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:textColor="#000"
+                app:buttonTint="@color/red"
+                android:paddingLeft="30dp"
+                android:backgroundTint="#000"/>
+            <TextView
+                android:id="@+id/tvterm"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ch_terms"
+                android:textColor="@android:color/white"
+                android:text="Terms &amp; Conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:background="@drawable/signup_butt" />
+    </LinearLayout>
+
+</ScrollView>
